@@ -1,4 +1,4 @@
-# replace_words
+# Replace words API
 An API that will use a string as input and find and replace for certain words and outputs the result. 
 
 For example: replace Google for Google©. 
