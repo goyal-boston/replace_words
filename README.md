@@ -11,3 +11,16 @@ Google -> Google©
 Microsoft -> Microsoft©
 Amazon -> Amazon©
 Deloitte -> Deloitte©
+
+# Sample Request
+curl --location --request POST 'https://35auuip4ug.execute-api.us-east-2.amazonaws.com/prod' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "strToReplace": "We really like the new security features of Amazon Cloud"
+}'
+
+# Sample Response
+{
+    "statusCode": 200,
+    "body": "We really like the new security features of Amazon© Cloud"
+}
